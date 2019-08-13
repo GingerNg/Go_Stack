@@ -5,7 +5,7 @@ import "fmt"
 func DemoSlice() {
 	var numbers = make([]int, 3, 5) //make([]T, length, capacity) 按capacity的加长slice
 
-	fmt.Sprint("numbers: %+v", numbers)
+	println(fmt.Sprint("numbers:", numbers))
 
 	println("emptyslice")
 	emptySlice := []int{}

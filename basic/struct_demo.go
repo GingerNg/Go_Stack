@@ -1,6 +1,9 @@
 package basic
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 /* 定义接口 */
 type FirstInterface interface {
@@ -38,6 +41,10 @@ func (firstStruct FirstStruct) method4(s int) (int, error) {
 func DemoStruct() {
 	//Go 语言中数组可以存储同一类型的数据，但在结构体中我们可以为不同项定义不同的数据类型。
 	firstStruct := FirstStruct{2, "fs", "fs"}
+
+	println(fmt.Sprint("firstStruct:", firstStruct))
+	println(fmt.Sprintf("firstStruct: %+v", firstStruct))
+
 	_, err := firstStruct.method1()
 	if err != nil {
 		print(err)

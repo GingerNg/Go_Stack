@@ -14,6 +14,8 @@ func DemoMap() {
 	demoMap["first"] = 1
 	demoMap["second"] = 2
 	demoMap["three"] = 3
+	println(fmt.Sprint("demoMap:", demoMap))
+	fmt.Println(demoMap)
 	for k, v := range demoMap {
 		fmt.Println(k, "首都是", demoMap[k])
 		fmt.Println(k, "首都是", v)
