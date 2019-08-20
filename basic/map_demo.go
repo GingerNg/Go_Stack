@@ -43,6 +43,9 @@ func DemoMap() {
 		fmt.Println("American 的首都不存在")
 	}
 
+	demoMappp := map[string]string{}
+	println(demoMappp)
+
 }
 
 //func main(){

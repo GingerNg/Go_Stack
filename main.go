@@ -2,6 +2,7 @@ package main
 
 import (
 	"Go_Stack/basic"
+	"Go_Stack/utils"
 	"fmt"
 )
 
@@ -16,4 +17,18 @@ func main() {
 	basic.DemoStruct()
 	basic.DemoGoroutine()
 
+	utils.DemoString()
+
+	//utils.DemoEs()
+
+	//tools.ESMain()
+
+	basic.DemoSwitch()
+
+	var md = map[string]interface{}{}
+	md["1"] = "2"
+	//println(md["1"].(type))
+	basic.DemoJson()
+
+	basic.HttpDemo()
 }
