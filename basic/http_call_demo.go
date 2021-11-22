@@ -32,16 +32,19 @@ func httpPostForm(t_url string) {
 
 	if err != nil {
 		// handle error
+		fmt.Println("----")
+		fmt.Println(err)
+		fmt.Println(resp)
 	}
-
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		// handle error
+	if resp != nil{
+		defer resp.Body.Close()
+		body, err := ioutil.ReadAll(resp.Body)
+		if err != nil {
+			// handle error
+			fmt.Println(err)
+		}
+		fmt.Println(string(body))
 	}
-
-	fmt.Println(string(body))
-
 }
 
 func httpPost(url string) {

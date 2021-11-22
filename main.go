@@ -2,6 +2,7 @@ package main
 
 import (
 	"Go_Stack/basic"
+	"Go_Stack/tools"
 	"Go_Stack/utils"
 	"fmt"
 )
@@ -9,6 +10,9 @@ import (
 func main() {
 	/* 这是我的第一个简单的程序 */
 	fmt.Println("Hello, World!")
+
+	// ***************************** basic ****************
+	basic.DemoInterface()
 
 	//循环语句
 
@@ -19,6 +23,7 @@ func main() {
 
 	utils.DemoString()
 
+	fmt.Println("Hello, World!")
 	//utils.DemoEs()
 
 	//tools.ESMain()
@@ -31,4 +36,7 @@ func main() {
 	basic.DemoJson()
 
 	basic.HttpDemo()
+
+	// ****************************** tools **********************
+	tools.DemoSqlite()
 }
